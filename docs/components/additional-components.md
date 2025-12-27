@@ -1,13 +1,23 @@
 # Additional Components
 
-### General Purpose PCB (70x90mm)
-**Price**: 35.00  
-**Site**: [Robu.in](https://robu.in/product/70-x-90-mm-double-sided-prototype-pcb-universal-circuit-board/)  
-**Details**:  
-For building custom amplifier circuits or mounting small modules.
+<div class="component-card">
+  <h3>Double-Sided Prototype PCB</h3>
+  <div class="component-meta">
+    <span class="component-price">₹ 35.00</span>
+    <a href="https://robu.in/product/70-x-90-mm-double-sided-prototype-pcb-universal-circuit-board/" target="_blank" class="buy-button">Buy Online</a>
+  </div>
+  <div class="component-details">
+    High-quality tinned double-sided PCB for prototyping custom circuits or securely mounting modular amplifier boards.
+  </div>
+</div>
 
-### High Quality Hook-up Wire (1 Meter)
-**Price**: 20.00  
-**Site**: [Robu.in](https://robu.in/product/high-quality-flexible-hook-up-wire-22-awg/)  
-**Details**:  
-Insulated wires for internal connections. Ensure proper gauge for power and speaker lines.
+<div class="component-card">
+  <h3>Hook-up Wire (22 AWG Flexible)</h3>
+  <div class="component-meta">
+    <span class="component-price">₹ 20.00 / Meter</span>
+    <a href="https://robu.in/product/high-quality-flexible-hook-up-wire-22-awg/" target="_blank" class="buy-button">Buy Online</a>
+  </div>
+  <div class="component-details">
+    Multi-strand flexible hook-up wire. Ideal for low-noise signal paths and robust power delivery within the amplifier case.
+  </div>
+</div>

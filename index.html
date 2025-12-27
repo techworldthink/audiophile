@@ -6,19 +6,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="A comprehensive guide for audiophile amplifier components.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <!-- CSS -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
       name: 'Audiophile Guide',
-      repo: '',
+      repo: 'https://github.com/techworldthink/audiophile',
       loadSidebar: 'SUMMARY.md',
-      subMaxLevel: 2
+      subMaxLevel: 2,
+      search: 'auto', // default
+      search : [
+        '/',
+        '/docs/components/amplifier-boards',
+        '/docs/components/power-supplies',
+        '/docs/components/pre-amplifiers',
+        '/docs/components/tone-controls',
+        '/docs/components/volume-controls',
+        '/docs/components/speaker-protection',
+        '/docs/components/input-output',
+        '/docs/components/cooling',
+        '/docs/components/enclosure',
+        '/docs/components/additional-components',
+        '/docs/components/bluetooth-modules',
+        '/docs/components/optional-enhancements'
+      ],
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Search components...',
+        noData: 'No results!',
+        depth: 6
+      },
+      copyCode: {
+        buttonText: 'Copy',
+        errorText: 'Error',
+        successText: 'Copied'
+      },
+      pagination: {
+        previousText: 'Previous Page',
+        nextText: 'Next Page',
+        crossChapter: true,
+        crossChapterText: true,
+      }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- Plugins -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 </body>
 </html>
