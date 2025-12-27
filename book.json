@@ -1,0 +1,36 @@
+{
+    "title": "Audiophile Component Guide",
+    "description": "A comprehensive guide for building AI/ML systems that detect anomalies in real-time (Modified for Audiophile Components)",
+    "author": "techworldthink",
+    "language": "en",
+    "root": ".",
+    "structure": {
+        "readme": "README.md",
+        "summary": "SUMMARY.md"
+    },
+    "plugins": [
+        "theme-default",
+        "search",
+        "fontsettings",
+        "sharing",
+        "page-toc-button",
+        "back-to-top-button",
+        "code",
+        "prism",
+        "-highlight"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+        "sharing": {
+            "facebook": false,
+            "twitter": true,
+            "google": false,
+            "all": [
+                "twitter",
+                "linkedin"
+            ]
+        }
+    }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Audiophile Component Guide</title>
@@ -8,10 +9,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
-  <!-- CSS -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- Theme -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Specific adjustments to match GitBook look */
+    :root {
+      --theme-color: #38bdf8;
+      /* Closer to GitBook blue */
+    }
+
+    .markdown-section {
+      max-width: 800px;
+    }
+  </style>
 </head>
+
 <body>
   <div id="app"></div>
   <script>
@@ -19,29 +32,14 @@
       name: 'Audiophile Guide',
       repo: 'https://github.com/techworldthink/audiophile',
       loadSidebar: 'SUMMARY.md',
-      subMaxLevel: 2,
-      search: 'auto', // default
-      search : [
-        '/',
-        '/docs/components/amplifier-boards',
-        '/docs/components/power-supplies',
-        '/docs/components/pre-amplifiers',
-        '/docs/components/tone-controls',
-        '/docs/components/volume-controls',
-        '/docs/components/speaker-protection',
-        '/docs/components/input-output',
-        '/docs/components/cooling',
-        '/docs/components/enclosure',
-        '/docs/components/additional-components',
-        '/docs/components/bluetooth-modules',
-        '/docs/components/optional-enhancements'
-      ],
+      subMaxLevel: 3,
+      auto2top: true,
       search: {
         maxAge: 86400000,
         paths: 'auto',
-        placeholder: 'Search components...',
-        noData: 'No results!',
-        depth: 6
+        placeholder: 'Search...',
+        noData: 'No Results!',
+        depth: 4
       },
       copyCode: {
         buttonText: 'Copy',
@@ -49,11 +47,15 @@
         successText: 'Copied'
       },
       pagination: {
-        previousText: 'Previous Page',
-        nextText: 'Next Page',
-        crossChapter: true,
-        crossChapterText: true,
-      }
+        previousText: 'Previous',
+        nextText: 'Next',
+        crossChapter: true
+      },
+      toc: {
+        scope: '.markdown-section',
+        headings: 'h1, h2, h3',
+        title: 'Table of Contents',
+      },
     }
   </script>
   <!-- Docsify v4 -->
@@ -63,5 +65,9 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-back-to-top/dist/docsify-back-to-top.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
 </body>
+
 </html>
